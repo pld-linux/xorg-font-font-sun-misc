@@ -1,16 +1,15 @@
 Summary:	sun-misc font
 Summary(pl):	Font sun-misc
 Name:		xorg-font-font-sun-misc
-Version:	0.99.1
+Version:	1.0.0
 Release:	0.1
 License:	MIT
 Group:		Fonts
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/font/font-sun-misc-%{version}.tar.bz2
-# Source0-md5:	9b3b55a357c956bb4536aa236225b007
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/font/font-sun-misc-%{version}.tar.bz2
+# Source0-md5:	e17d43a7c6c0d862cfba0908ff132ffa
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-app-bdftopcf
 BuildRequires:	xorg-app-mkfontdir
 BuildRequires:	xorg-app-mkfontscale
