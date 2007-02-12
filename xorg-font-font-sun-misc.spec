@@ -1,5 +1,5 @@
 Summary:	sun-misc font
-Summary(pl.UTF-8):   Font sun-misc
+Summary(pl.UTF-8):	Font sun-misc
 Name:		xorg-font-font-sun-misc
 Version:	1.0.0
 Release:	0.1
