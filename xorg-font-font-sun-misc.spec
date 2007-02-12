@@ -1,5 +1,5 @@
 Summary:	sun-misc font
-Summary(pl):	Font sun-misc
+Summary(pl.UTF-8):   Font sun-misc
 Name:		xorg-font-font-sun-misc
 Version:	1.0.0
 Release:	0.1
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 sun-misc font.
 
-%description -l pl
+%description -l pl.UTF-8
 Font sun-misc.
 
 %prep
