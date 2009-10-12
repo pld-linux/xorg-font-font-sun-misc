@@ -1,12 +1,12 @@
 Summary:	Sun Open Look bitmap fonts
 Summary(pl.UTF-8):	Fonty bitmapowe Sun Open Look
 Name:		xorg-font-font-sun-misc
-Version:	1.0.0
-Release:	2
+Version:	1.0.1
+Release:	1
 License:	MIT
 Group:		Fonts
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-sun-misc-%{version}.tar.bz2
-# Source0-md5:	e17d43a7c6c0d862cfba0908ff132ffa
+# Source0-md5:	5a185c5549a650bf062d343e128682ca
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -36,6 +36,8 @@ Fonty bitmapowe Sun Open Look Cursor i Open Look Glyph.
 %{__autoconf}
 %{__automake}
 %configure \
+	--build=%{_host_platform} \
+	--host=%{_host_platform} \
 	--with-fontdir=%{_fontsdir}/misc
 
 %{__make}
