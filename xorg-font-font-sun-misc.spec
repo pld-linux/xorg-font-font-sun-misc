@@ -13,8 +13,8 @@ BuildRequires:	automake
 BuildRequires:	xorg-app-bdftopcf
 BuildRequires:	xorg-app-mkfontdir
 BuildRequires:	xorg-app-mkfontscale
-BuildRequires:	xorg-font-font-util
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-font-font-util >= 1.1
+BuildRequires:	xorg-util-util-macros >= 1.3
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/misc
 # contains useful aliases for these fonts
@@ -36,8 +36,8 @@ Fonty bitmapowe Sun Open Look Cursor i Open Look Glyph.
 %{__autoconf}
 %{__automake}
 %configure \
-	--build=%{_host_platform} \
-	--host=%{_host_platform} \
+	--build=%{_host} \
+	--host=%{_host} \
 	--with-fontdir=%{_fontsdir}/misc
 
 %{__make}
@@ -59,6 +59,6 @@ fontpostinst misc
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %{_fontsdir}/misc/olcursor.pcf.gz
 %{_fontsdir}/misc/olgl*.pcf.gz
